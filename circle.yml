@@ -1,0 +1,14 @@
+# your build sir: https://circleci.com/
+
+machine:
+  java:
+    version: oraclejdk8
+
+general:
+  artifacts:
+    - "**/target/surefire-reports"
+
+dependencies:
+  override:
+    - mvn clean install
+
